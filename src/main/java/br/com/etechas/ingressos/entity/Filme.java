@@ -15,5 +15,5 @@ private Long id;
     String descricao;
     double avaliacao;
     SimNaoEnum emCartaz;
-
+    int ingre;
 }
