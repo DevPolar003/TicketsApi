@@ -1,6 +1,6 @@
-package br.com.etechoracio.ingresso.enums;
+package br.com.etechas.ingressos.enums;
 
 public enum SimNaoEnum {
-    S,
-    N
+  S,
+  N
 }
