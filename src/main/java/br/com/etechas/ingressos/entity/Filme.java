@@ -1,18 +1,32 @@
 package br.com.etechas.ingressos.entity;
 
 import br.com.etechas.ingressos.enums.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
+@AllArgsConstructor
 public class Filme {
-  Long id;
-  String nome;
-  Integer duracao;
-  ClassificacaoIndicativaEnum classificao;
-  CategoriaFilmeEnum categoria;
-  Integer ano;
-  String capa;
-  String diretor;
-  String elenco;
-  String descricao;
-  double avaliacao;
-  SimNaoEnum emCartaz;
+  private Long id;
+  private String nome;
+  private Integer duracao;
+  private ClassificacaoIndicativaEnum classificao;
+  private CategoriaFilmeEnum categoria;
+  private Integer ano;
+  private String capa;
+  private String diretor;
+  private String elenco;
+  private String descricao;
+  private double avaliacao;
+  private SimNaoEnum emCartaz;
+
+
+  public Filme(String nome, Long id, ClassificacaoIndicativaEnum classificao, SimNaoEnum emCartaz) {
+    this.id = id;
+    this.nome = nome;
+    this.classificao = classificao;
+    this.emCartaz = emCartaz;
+  }
 }
