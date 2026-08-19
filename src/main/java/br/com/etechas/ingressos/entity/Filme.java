@@ -3,11 +3,12 @@ package br.com.etechas.ingressos.entity;
 import br.com.etechas.ingressos.enums.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 public class Filme {
   private Long id;
   private String nome;
